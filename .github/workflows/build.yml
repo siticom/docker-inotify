@@ -27,6 +27,7 @@ jobs:
         with:
           files: |
             Dockerfile
+            entrypoint.sh
             .github/workflows/**/*
 
       - name: Set up QEMU
