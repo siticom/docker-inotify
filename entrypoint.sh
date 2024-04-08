@@ -15,7 +15,7 @@ stop() {
 }
 
 while true; do
-    inotifywait $FILE &
+    inotifywait -e delete,delete_self $FILE &
     WAIT_PID=$!
     wait $WAIT_PID
 
